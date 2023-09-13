@@ -2,7 +2,7 @@
 
 Bem-vindo ao Minicurso de Python para Análise de Dados Econômicos! 🚀
 
-![Imagem de Capa](link_da_imagem_de_capa.png)
+![Imagem de Capa](https://github.com/rafaelladuarte/MiniCurso_Python_LIDE_UFU/blob/main/_imagens/capa.png)
 
 ## Público-Alvo
 
@@ -24,7 +24,6 @@ Durante o curso, você explorará tópicos como:
 - Módulos
 - Introdução a Programaçao Orientada a Objetos (POO)
 - Projeto Final: Análise de Dados Econômicos
-
 
 ## Projeto Final
 
