@@ -1,6 +1,6 @@
 '''
 -----------------------------------------------------------------------------
-Exercício 9 : Controle de Despesas Empresariais
+Exercício 9: Controle de Despesas Empresariais
 -----------------------------------------------------------------------------
 Suponha que você está desenvolvendo um programa de controle de despesas para
 uma pequena empresa. Você precisa criar um dicionário para armazenar

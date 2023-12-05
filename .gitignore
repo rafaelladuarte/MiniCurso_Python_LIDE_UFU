@@ -129,3 +129,5 @@ dmypy.json
 .pyre/
 
 # Pessoal
+Pipfile
+Pipfile.lock

@@ -20,7 +20,8 @@ contrário, exiba uma mensagem de projeto não viável.
 '''
 
 # Solicitar ao usuário informações do projeto de investimento
-print("Cálculo do Valor Presente Líquido (VPL)")
+print("-------------------------------------")
+print("Calculo do Valor Presente Líquido (VPL)")
 print("-------------------------------------")
 
 taxa_desconto = float(

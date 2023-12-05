@@ -23,13 +23,13 @@ como argumentos, verificar se há saldo suficiente e atualizar o saldo da conta
 correspondente.
 '''
 
-
 class Cliente:
     def __init__(self, nome, sobrenome, endereco, telefone):
         self.nome = nome
         self.sobrenome = sobrenome
         self.endereco = endereco
         self.telefone = telefone
+        self.contas = []
 
     def calcular_idade(self, ano_nascimento):
         ano_atual = 2023
@@ -64,8 +64,54 @@ class Banco:
     def criar_conta(self, cliente, numero_conta, saldo_inicial):
         conta = ContaBancaria(numero_conta, saldo_inicial)
         cliente.contas.append(conta)
-        self.clientes.append(cliente)
+        print(f"Conta criada para {cliente.nome} {cliente.sobrenome} - Número da conta: {numero_conta}")
 
     def listar_clientes(self):
         for cliente in self.clientes:
             print(f"Nome: {cliente.nome} {cliente.sobrenome}")
+
+    def depositar(self, numero_conta, valor):
+        for cliente in self.clientes:
+            for conta in cliente.contas:
+                if conta.numero_conta == numero_conta:
+                    conta.depositar(valor)
+                    print(f"Depósito de R$ {valor:.2f} na conta {numero_conta} de {cliente.nome} {cliente.sobrenome}")
+                    return
+        print("Conta não encontrada.")
+
+    def sacar(self, numero_conta, valor):
+        for cliente in self.clientes:
+            for conta in cliente.contas:
+                if conta.numero_conta == numero_conta:
+                    conta.sacar(valor)
+                    print(f"Saque de R$ {valor:.2f} da conta {numero_conta} de {cliente.nome} {cliente.sobrenome}")
+                    return
+        print("Conta não encontrada.")
+
+
+# Criar clientes
+cliente1 = Cliente("João", "Silva", "123 Rua Principal", "123-456-7890")
+cliente2 = Cliente("Maria", "Santos", "456 Rua Secundária", "987-654-3210")
+
+# Criar banco
+banco = Banco("Banco Python")
+
+# Adicionar clientes ao banco
+banco.clientes.append(cliente1)
+banco.clientes.append(cliente2)
+
+# Listar clientes antes de abrir contas
+print("\nLista de clientes antes de abrir contas:")
+banco.listar_clientes()
+
+# Abrir contas bancárias
+banco.criar_conta(cliente1, "12345", 1000.0)
+banco.criar_conta(cliente2, "67890", 500.0)
+
+# Listar clientes depois de abrir contas
+print("\nLista de clientes depois de abrir contas:")
+banco.listar_clientes()
+
+# Realizar operações
+banco.depositar("12345", 500.0)
+banco.sacar("67890", 200.0)

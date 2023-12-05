@@ -28,7 +28,7 @@ print("-------------------------")
 print("Seu saldo atual é: R$", saldo)
 
 # Solicitar ao usuário a operação desejada
-print("\nEscolha a operação desejada:")
+print("Escolha a operação desejada:")
 print("1. Depósito")
 print("2. Saque")
 
@@ -39,17 +39,17 @@ if opcao == 1:
     # Depósito
     valor_deposito = float(input("Digite o valor do depósito: "))
     saldo += valor_deposito
-    print("\nDepósito realizado com sucesso!")
+    print("Depósito realizado com sucesso!")
 elif opcao == 2:
     # Saque
     valor_saque = float(input("Digite o valor do saque: "))
     if valor_saque <= saldo:
         saldo -= valor_saque
-        print("\nSaque realizado com sucesso!")
+        print("Saque realizado com sucesso!")
     else:
-        print("\nSaldo insuficiente para o saque.")
+        print("Saldo insuficiente para o saque.")
 else:
-    print("\nOpção inválida.")
+    print("Opção inválida.")
 
 # Exibir o saldo atualizado
-print("\nSeu saldo atual é: R$", saldo)
+print("Seu saldo atual é: R$", saldo)

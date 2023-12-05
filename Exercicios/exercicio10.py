@@ -1,6 +1,6 @@
 '''
 ----------------------------------------------------------------------------
-Exercício 9: Análise de Taxas de Câmbio
+Exercício 10: Análise de Taxas de Câmbio
 -----------------------------------------------------------------------------
 Suponha que você está desenvolvendo um programa para analisar as taxas de
 câmbio de diferentes moedas em relação a uma moeda de referência. Você precisa
@@ -31,7 +31,7 @@ taxas de câmbio atualizada.
 taxas_cambio = (5.25, 0.82, 110.75, 0.71, 0.62)
 
 # Conjunto de moedas disponíveis
-moedas = {'USD', 'EUR', 'JPY', 'GBP', 'AUD'}
+moedas = ['USD', 'EUR', 'JPY', 'GBP', 'AUD']
 print("Moedas disponíveis para análise:")
 for moeda in moedas:
     print(moeda)
@@ -57,7 +57,7 @@ nova_moeda = input("Digite a sigla de uma nova moeda: ")
 nova_taxa = float(input("Digite a taxa de câmbio para a nova moeda: "))
 
 taxas_cambio = taxas_cambio + (nova_taxa,)
-moedas.add(nova_moeda)
+moedas.append(nova_moeda)
 
 print("Moedas disponíveis para análise (atualizado):")
 for moeda in moedas:
