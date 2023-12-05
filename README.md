@@ -39,12 +39,14 @@ Ao final deste minicurso, você terá a oportunidade de aplicar seus conheciment
 
 O repositório está organizado da seguinte forma:
 
-├── _imagens/ # Pasta com imagens do MiniCurso
-├── Apostilas/ # Apostilas Téorica, de Exercicios e Guia de Instalação
-├── Exercicios/ # Código das resoluções de Exercicios
-├── Aulas/ # Códigos dos exemplos utilizados na Aula
-├── Projeto_Final/ 
-└── README.md # Este arquivo de documentação
+```
+├── _imagens/           # Pasta com imagens do MiniCurso
+├── Material_Aula/      # Pasta com as apostilas e slides utilizadas no Minicurso
+├── Exercicios/         # Pasta com os códigos de resoluções dos exercicios
+├── Exemplos_Aula/           # Pasta com os códigos de exemplos utilizados no Minicurso
+├── Projeto_Final/      # Pasta com as orientações do Projeto Final
+└── README.md           # Este arquivo de documentação do repositório
+```
 
 ## Contribuições
 Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas (issues) ou enviar pull requests com melhorias ou correções.
